@@ -79,8 +79,9 @@
     }
     </script>
 
-    <!-- Speed up hero image (LCP): self-hosted, fetched before CSS parses -->
-    <link rel="preload" as="image" fetchpriority="high" href="img/hero.webp">
+    <!-- Speed up hero image (LCP): self-hosted, fetched before CSS parses. Mobile gets the lighter file. -->
+    <link rel="preload" as="image" fetchpriority="high" href="img/hero-mobile.webp" media="(max-width: 767px)">
+    <link rel="preload" as="image" fetchpriority="high" href="img/hero.webp" media="(min-width: 768px)">
 
     <script src="https://cdn.tailwindcss.com/3.4.17" vid="5"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" vid="6">
@@ -144,6 +145,11 @@
         }
         #mobile-menu.is-open { transform: translateX(0); }
 
+        /* Mobile: lighter hero image (30KB vs 92KB) */
+        @media (max-width: 767px) {
+            .bg-hero-pattern { background-image: url('img/hero-mobile.webp') !important; }
+        }
+
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after {
                 animation-duration: 0.01ms !important;
@@ -204,9 +210,9 @@
     </div>
 
     
-    <section id="home" class="relative h-screen w-full flex items-center justify-center overflow-hidden" vid="25">
+    <section id="home" class="relative h-[100svh] w-full flex items-center justify-center overflow-hidden" vid="25">
         
-        <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed scale-105" vid="26"></div>
+        <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center bg-no-repeat md:bg-fixed scale-105" vid="26"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" vid="27"></div>
         
         <div class="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center mt-16 w-full" vid="28">
