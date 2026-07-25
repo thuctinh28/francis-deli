@@ -19,7 +19,7 @@
     <meta property="og:title" content="Francis Deli Belmont &amp; Geelong | Sandwiches, Toasties &amp; Coffee">
     <meta property="og:description" content="Now open on Francis Street, Belmont. Fresh sandwiches, toasties, coffee and takeaway lunch for Belmont and Geelong.">
     <meta property="og:url" content="https://francisdeli.com.au/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1628191010210-a59de33e5941?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:image" content="https://francisdeli.com.au/img/hero.webp">
     <meta property="og:image:alt" content="Fresh artisanal sandwich at Francis Deli">
     <meta property="og:locale" content="en_AU">
 
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Francis Deli Belmont &amp; Geelong | Sandwiches, Toasties &amp; Coffee">
     <meta name="twitter:description" content="Now open on Francis Street, Belmont. Fresh sandwiches, toasties, coffee and takeaway lunch for Belmont and Geelong.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1628191010210-a59de33e5941?auto=format&fit=crop&w=1200&q=80">
+    <meta name="twitter:image" content="https://francisdeli.com.au/img/hero.webp">
 
     <!-- Structured data: LocalBusiness / Restaurant -->
     <script type="application/ld+json">
@@ -36,7 +36,7 @@
       "@type": "Restaurant",
       "name": "Francis Deli",
       "description": "Francis Deli is a local deli and sandwich shop in Belmont, serving fresh sandwiches, toasties, coffee and takeaway lunch for Belmont and Geelong.",
-      "image": "https://images.unsplash.com/photo-1628191010210-a59de33e5941?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://francisdeli.com.au/img/hero.webp",
       "url": "https://francisdeli.com.au/",
       "telephone": "+61404962812",
       "priceRange": "$$",
@@ -79,6 +79,9 @@
     }
     </script>
 
+    <!-- Speed up hero image (LCP): self-hosted, fetched before CSS parses -->
+    <link rel="preload" as="image" fetchpriority="high" href="img/hero.webp">
+
     <script src="https://cdn.tailwindcss.com/3.4.17" vid="5"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" vid="6">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" vid="7">
@@ -100,7 +103,7 @@
                         condensed: ['"Oswald"', 'sans-serif']
                     },
                     backgroundImage: {
-                        'hero-pattern': "url('https://images.unsplash.com/photo-1628191010210-a59de33e5941?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+                        'hero-pattern': "url('img/hero.webp')"
                     }
                 }
             }
@@ -447,14 +450,14 @@
                 
                 <div class="order-1 lg:order-2 grid grid-cols-2 gap-6 h-[600px]" vid="170">
                     <div class="col-span-1 h-full rounded-[2rem] overflow-hidden shadow-2xl transform translate-y-12" vid="171">
-                        <img src="https://images.unsplash.com/photo-1509315811345-672d83ef2fbc?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Freshly baked artisanal bread at Francis Deli" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" vid="172">
+                        <img src="img/about-1.webp" alt="Freshly baked artisanal bread at Francis Deli" loading="lazy" decoding="async" width="800" height="1000" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" vid="172">
                     </div>
                     <div class="col-span-1 grid grid-rows-2 gap-6 h-full" vid="173">
                         <div class="rounded-[2rem] overflow-hidden shadow-2xl" vid="174">
-                            <img src="https://images.unsplash.com/photo-1600850056064-a8f379dfaba0?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Francis Deli counter with cured meats and cheeses" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" vid="175">
+                            <img src="img/about-2.webp" alt="Fresh deli baguette roll with greens and tomato" loading="lazy" decoding="async" width="800" height="533" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" vid="175">
                         </div>
                         <div class="rounded-[2rem] overflow-hidden shadow-2xl" vid="176">
-                            <img src="https://images.unsplash.com/photo-1554432174-8b63e18a9391?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Specialty coffee and sandwiches at Francis Deli" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" vid="177">
+                            <img src="img/about-3.webp" alt="Specialty coffee with latte art at Francis Deli" loading="lazy" decoding="async" width="800" height="533" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" vid="177">
                         </div>
                     </div>
                 </div>
