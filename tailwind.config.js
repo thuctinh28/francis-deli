@@ -10,9 +10,9 @@ module.exports = {
         sand: '#EAE5DB',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans: ['"Inter"', 'Arial', 'sans-serif'],
-        condensed: ['"Oswald"', 'Arial Narrow', 'sans-serif'],
+        serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+        sans: ['Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif'],
+        condensed: ['Arial Narrow', 'Aptos Narrow', 'Arial', 'sans-serif'],
       },
       backgroundImage: {
         'hero-pattern': "url('img/hero.webp')",
