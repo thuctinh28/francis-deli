@@ -4,7 +4,7 @@
     <title vid="4">Francis Deli Belmont &amp; Geelong | Sandwiches, Toasties &amp; Coffee</title>
 
     <!-- SEO: primary meta -->
-    <meta name="description" content="Francis Deli — fresh sandwiches, toasties &amp; coffee in Belmont, Geelong. Open Tuesday to Saturday, 8:00am–2:30pm. Closed Sunday and Monday.">
+    <meta name="description" content="Francis Deli — fresh sandwiches, toasties &amp; coffee in Belmont, Geelong. Open Monday to Friday 8:00am–2:30pm, and Saturday to Sunday 8:30am–2:30pm.">
     <meta name="keywords" content="Francis Deli, deli Belmont, deli Geelong, sandwiches Belmont, sandwiches Geelong, toasties Belmont, coffee Belmont, coffee Geelong, takeaway lunch Belmont, catering Geelong">
     <meta name="author" content="Francis Deli">
     <meta name="robots" content="index, follow, max-image-preview:large">
@@ -23,7 +23,7 @@
     <meta property="og:type" content="restaurant">
     <meta property="og:site_name" content="Francis Deli">
     <meta property="og:title" content="Francis Deli Belmont &amp; Geelong | Sandwiches, Toasties &amp; Coffee">
-    <meta property="og:description" content="Now open on Francis Street, Belmont. Fresh sandwiches, toasties, coffee and takeaway lunch, Tuesday to Saturday 8:00am–2:30pm.">
+    <meta property="og:description" content="Now open on Francis Street, Belmont. Fresh sandwiches, toasties, coffee and takeaway lunch, seven days a week.">
     <meta property="og:url" content="https://francisdeli.com.au/">
     <meta property="og:image" content="https://francisdeli.com.au/img/hero.webp">
     <meta property="og:image:width" content="1920">
@@ -34,7 +34,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Francis Deli Belmont &amp; Geelong | Sandwiches, Toasties &amp; Coffee">
-    <meta name="twitter:description" content="Now open on Francis Street, Belmont. Fresh sandwiches, toasties, coffee and takeaway lunch, Tuesday to Saturday 8:00am–2:30pm.">
+    <meta name="twitter:description" content="Now open on Francis Street, Belmont. Fresh sandwiches, toasties, coffee and takeaway lunch, seven days a week.">
     <meta name="twitter:image" content="https://francisdeli.com.au/img/hero.webp">
 
     <!-- Structured data: LocalBusiness / Restaurant -->
@@ -51,7 +51,7 @@
       "servesCuisine": ["Sandwiches", "Deli", "Coffee", "Cafe", "Takeaway"],
       "areaServed": ["Belmont VIC", "Geelong VIC"],
       "menu": "https://francisdeli.com.au/#menu",
-      "hasMap": "https://www.google.com/maps/search/?api=1&query=164%20Francis%20St%2C%20Belmont%20VIC%203216",
+      "hasMap": "https://maps.google.com/?cid=7138294482831935208",
       "acceptsReservations": "False",
       "address": {
         "@type": "PostalAddress",
@@ -63,21 +63,27 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": -38.184828,
-        "longitude": 144.346914
+        "latitude": -38.1848245,
+        "longitude": 144.3469605
       },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "08:00",
+          "closes": "14:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "08:30",
           "closes": "14:30"
         }
       ],
       "sameAs": [
-        "https://www.facebook.com/francisdeli164",
+        "https://www.facebook.com/francisdeli164/",
         "https://www.instagram.com/francisdeli164/",
-        "https://www.google.com/maps/search/?api=1&query=164%20Francis%20St%2C%20Belmont%20VIC%203216"
+        "https://maps.google.com/?cid=7138294482831935208"
       ]
     }
     </script>
@@ -101,7 +107,7 @@
           "name": "What are Francis Deli's opening hours?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Francis Deli is open Tuesday to Saturday from 8:00am to 2:30pm. It is closed on Sunday and Monday."
+            "text": "Francis Deli is open Monday to Friday from 8:00am to 2:30pm, and Saturday to Sunday from 8:30am to 2:30pm."
           }
         },
         {
@@ -136,33 +142,11 @@
     <link rel="preload" as="image" fetchpriority="high" href="img/hero-mobile.webp" media="(max-width: 767px)">
     <link rel="preload" as="image" fetchpriority="high" href="img/hero.webp" media="(min-width: 768px)">
 
-    <script src="https://cdn.tailwindcss.com/3.4.17" vid="5"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" vid="6">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" vid="7">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Oswald:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" vid="8">
-    <script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.min.js" vid="9"></script>
-    <script vid="10">
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        burgundy: '#581C21',
-                        cream: '#FDFBF7',
-                        dark: '#1C1917',
-                        sand: '#EAE5DB'
-                    },
-                    fontFamily: {
-                        serif: ['"Playfair Display"', 'serif'],
-                        sans: ['"Inter"', 'sans-serif'],
-                        condensed: ['"Oswald"', 'sans-serif']
-                    },
-                    backgroundImage: {
-                        'hero-pattern': "url('img/hero.webp')"
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Oswald:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Oswald:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"></noscript>
     <style>
         /* Smooth deceleration curve for premium feel */
         :root { --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1); }
@@ -235,7 +219,7 @@
                     Call to Order
                 </a>
                 <button id="menu-toggle" class="md:hidden text-burgundy p-2 -mr-2" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" vid="23">
-                    <i data-lucide="menu" class="w-7 h-7" aria-hidden="true" vid="24"></i>
+                    <svg class="w-7 h-7" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
                 </button>
             </div>
         </div>
@@ -246,7 +230,7 @@
         <div class="flex items-center justify-between h-24 px-6 border-b border-cream/15">
             <span class="font-serif text-3xl font-bold tracking-tight">Francis Deli</span>
             <button id="menu-close" class="text-cream p-2 -mr-2" aria-label="Close menu">
-                <i data-lucide="x" class="w-7 h-7" aria-hidden="true"></i>
+                <svg class="w-7 h-7" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </button>
         </div>
         <nav class="flex flex-col gap-2 px-6 py-10" aria-label="Mobile">
@@ -275,11 +259,15 @@
                 Fresh Sandwiches.<br vid="31">Coffee &amp; Toasties.
             </h1>
             
-            <div class="flex flex-col sm:flex-row items-center gap-6 w-full sm:w-auto" vid="32">
+            <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full sm:w-auto" vid="32">
+                <a href="https://maps.google.com/?cid=7138294482831935208" target="_blank" rel="noopener" class="w-full sm:w-auto px-10 py-4 bg-burgundy text-cream rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-burgundy/90 transition-colors text-center shadow-lg hover:shadow-xl border border-burgundy inline-flex items-center justify-center" vid="34">
+                    <svg class="w-4 h-4 mr-2" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    Get Directions
+                </a>
                 <a href="#menu" class="w-full sm:w-auto px-10 py-4 bg-cream text-burgundy rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-white transition-colors text-center shadow-lg hover:shadow-xl" vid="33">
                     View Menu
                 </a>
-                <a href="tel:0404962812" class="w-full sm:w-auto px-10 py-4 bg-burgundy text-cream rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-burgundy/90 transition-colors text-center shadow-lg hover:shadow-xl border border-burgundy" vid="34">
+                <a href="tel:0404962812" class="w-full sm:w-auto px-10 py-4 bg-transparent text-cream rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-cream/10 transition-colors text-center shadow-lg hover:shadow-xl border border-cream/50" vid="35">
                     Call to Order
                 </a>
             </div>
@@ -483,7 +471,7 @@
             <div class="mt-24 text-center" vid="156">
                 <a href="tel:0404962812" class="inline-flex items-center justify-center px-12 py-4 border-2 border-burgundy text-burgundy rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-burgundy hover:text-white transition-all group shadow-sm" vid="157">
                     View Catering Menu
-                    <i data-lucide="arrow-right" class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" aria-hidden="true" vid="158"></i>
+                    <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </a>
             </div>
         </div>
@@ -528,7 +516,7 @@
     <section id="faq" class="bg-cream py-28 md:py-32 relative z-20">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="font-condensed text-burgundy/60 uppercase tracking-[0.3em] text-sm mb-5 block">Local FAQ</span>
+                <span class="font-condensed text-burgundy/80 uppercase tracking-[0.3em] text-sm mb-5 block">Local FAQ</span>
                 <h2 class="font-serif italic text-5xl md:text-7xl text-burgundy mb-6">Good to know</h2>
                 <p class="font-sans text-gray-600 max-w-2xl mx-auto text-lg font-light">Quick answers for Belmont and Geelong locals planning a coffee, sandwich or takeaway lunch visit.</p>
             </div>
@@ -540,7 +528,7 @@
                 </article>
                 <article class="rounded-3xl bg-white border border-sand p-8 shadow-sm">
                     <h3 class="font-serif text-2xl text-burgundy mb-3">What are the opening hours?</h3>
-                    <p class="text-gray-600 leading-relaxed font-light">We are open Tuesday to Saturday, 8:00am–2:30pm. Francis Deli is closed on Sunday and Monday.</p>
+                    <p class="text-gray-600 leading-relaxed font-light">We are open Monday to Friday, 8:00am–2:30pm, and Saturday to Sunday, 8:30am–2:30pm.</p>
                 </article>
                 <article class="rounded-3xl bg-white border border-sand p-8 shadow-sm">
                     <h3 class="font-serif text-2xl text-burgundy mb-3">Do you offer takeaway?</h3>
@@ -573,44 +561,44 @@
                     </p>
                     <div class="flex items-center gap-4" vid="186">
                         <a href="https://www.instagram.com/francisdeli164/" aria-label="Instagram" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-burgundy hover:border-burgundy transition-all duration-300 group" vid="187">
-                            <i data-lucide="instagram" class="w-5 h-5 text-cream group-hover:scale-110 transition-transform" aria-hidden="true" vid="188"></i>
+                            <svg class="w-5 h-5 text-cream group-hover:scale-110 transition-transform" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
                         </a>
-                        <a href="https://www.facebook.com/francisdeli164" aria-label="Facebook" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-burgundy hover:border-burgundy transition-all duration-300 group" vid="189">
-                            <i data-lucide="facebook" class="w-5 h-5 text-cream group-hover:scale-110 transition-transform" aria-hidden="true" vid="190"></i>
+                        <a href="https://www.facebook.com/francisdeli164/" aria-label="Facebook" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-burgundy hover:border-burgundy transition-all duration-300 group" vid="189">
+                            <svg class="w-5 h-5 text-cream group-hover:scale-110 transition-transform" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.6l.4-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                         </a>
                     </div>
                 </div>
 
                 
                 <div class="lg:col-span-3" vid="191">
-                    <h4 class="font-condensed uppercase tracking-widest text-sm text-cream/40 mb-8 border-b border-white/10 pb-4" vid="192">Visit Us</h4>
+                    <h4 class="font-condensed uppercase tracking-widest text-sm text-cream/70 mb-8 border-b border-white/10 pb-4" vid="192">Visit Us</h4>
                     <p class="font-sans font-light text-cream/90 text-lg mb-2" vid="193">164 Francis St</p>
                     <p class="font-sans font-light text-cream/90 text-lg mb-2" vid="194">Belmont VIC 3216</p>
                     <p class="font-sans font-light text-cream/60 text-base mb-8">Serving Belmont &amp; Geelong</p>
-                    <a href="https://www.google.com/maps/search/?api=1&amp;query=164%20Francis%20St%2C%20Belmont%20VIC%203216" target="_blank" rel="noopener" class="inline-flex items-center text-sm font-condensed uppercase tracking-widest text-burgundy hover:text-white transition-colors" vid="195">
-                        <i data-lucide="map-pin" class="w-4 h-4 mr-2" aria-hidden="true" vid="196"></i>
+                    <a href="https://maps.google.com/?cid=7138294482831935208" target="_blank" rel="noopener" class="inline-flex items-center text-sm font-condensed uppercase tracking-widest text-cream hover:text-white transition-colors" vid="195">
+                        <svg class="w-4 h-4 mr-2" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
                         Get Directions
                     </a>
                 </div>
 
                 
                 <div class="lg:col-span-3" vid="197">
-                    <h4 class="font-condensed uppercase tracking-widest text-sm text-cream/40 mb-8 border-b border-white/10 pb-4" vid="198">Opening Hours</h4>
+                    <h4 class="font-condensed uppercase tracking-widest text-sm text-cream/70 mb-8 border-b border-white/10 pb-4" vid="198">Opening Hours</h4>
                     <ul class="space-y-4 font-sans font-light text-cream/90" vid="199">
                         <li class="flex justify-between items-center" vid="200">
-                            <span vid="201">Tue — Sat</span>
+                            <span vid="201">Mon — Fri</span>
                             <span class="font-medium" vid="202">8:00am – 2:30pm</span>
                         </li>
                         <li class="flex justify-between items-center border-t border-white/5 pt-4" vid="203">
-                            <span vid="204">Sun &amp; Mon</span>
-                            <span class="font-medium" vid="205">Closed</span>
+                            <span vid="204">Sat — Sun</span>
+                            <span class="font-medium" vid="205">8:30am – 2:30pm</span>
                         </li>
                     </ul>
                 </div>
 
                 
                 <div class="lg:col-span-2" vid="209">
-                    <h4 class="font-condensed uppercase tracking-widest text-sm text-cream/40 mb-8 border-b border-white/10 pb-4" vid="210">Contact</h4>
+                    <h4 class="font-condensed uppercase tracking-widest text-sm text-cream/70 mb-8 border-b border-white/10 pb-4" vid="210">Contact</h4>
                     <a href="tel:0404962812" class="block font-sans font-light text-cream/90 text-lg mb-8 hover:text-burgundy transition-colors" vid="211">
                         0404 962 812
                     </a>
@@ -624,19 +612,17 @@
             
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-6" vid="213">
                 <div class="flex items-center gap-2" vid="214">
-                    <span class="font-sans text-cream/40 text-sm font-light" vid="215">© 2026 Francis Deli.</span>
-                    <span class="font-sans text-cream/40 text-sm font-light" vid="216">All rights reserved.</span>
+                    <span class="font-sans text-cream/70 text-sm font-light" vid="215">© 2026 Francis Deli.</span>
+                    <span class="font-sans text-cream/70 text-sm font-light" vid="216">All rights reserved.</span>
                 </div>
-                <div class="font-sans text-sm text-cream/40 font-light" vid="217">
-                    Open Tuesday to Saturday, 8:00am–2:30pm. Closed Sunday and Monday.
+                <div class="font-sans text-sm text-cream/70 font-light" vid="217">
+                    Open Monday to Friday, 8:00am–2:30pm. Saturday to Sunday, 8:30am–2:30pm.
                 </div>
             </div>
         </div>
     </footer>
 
     <script vid="220">
-        lucide.createIcons();
-
         /* --- Header shrink on scroll --- */
         const header = document.getElementById('header');
         const headerBar = header.querySelector('.header-bar');
