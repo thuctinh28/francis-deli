@@ -1,0 +1,358 @@
+<html lang="en" vid="0"><head vid="1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico?v=3" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=3">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+    <script src="https://cdn.tailwindcss.com/3.4.17" vid="2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,700&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet" vid="3">
+    <script src="https://unpkg.com/@phosphor-icons/web" vid="4"></script>
+    <style vid="5">
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF7;
+            color: #1C1917;
+        }
+        .font-serif-italic {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+        .tracking-widest-extra {
+            letter-spacing: 0.3em;
+        }
+        .burgundy-bg { background-color: #7A2E3B; }
+        .burgundy-text { color: #7A2E3B; }
+        .burgundy-border { border-color: #7A2E3B; }
+        .cream-bg { background-color: #FDFBF7; }
+        
+        .section-overlap {
+            margin-top: -5rem;
+            border-top-left-radius: 4rem;
+            border-top-right-radius: 4rem;
+        }
+
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FDFBF7; }
+        ::-webkit-scrollbar-thumb { background: #7A2E3B; border-radius: 10px; }
+    </style>
+</head>
+<body class="antialiased" vid="6">
+
+    
+    <header class="fixed top-0 left-0 right-0 h-24 z-50 bg-[#FDFBF7]/80 backdrop-blur-md border-b border-stone-200" vid="7">
+        <div class="max-w-7xl mx-auto h-full px-8 flex items-center justify-between" vid="8">
+            
+            <div class="lg:hidden" vid="9">
+                <i class="ph ph-list text-2xl" vid="10"></i>
+            </div>
+
+            
+            <nav class="hidden lg:flex items-center gap-12 text-[10px] font-semibold tracking-widest-extra text-stone-500" vid="11">
+                <a href="/" class="hover:text-[#7A2E3B] transition-colors" vid="12">HOME</a>
+                <a href="/#about" class="hover:text-[#7A2E3B] transition-colors" vid="13">ABOUT</a>
+                <a href="/menu/" class="text-[#7A2E3B] border-b border-[#7A2E3B] pb-1" vid="14">MENU</a>
+                <a href="/#faq" class="hover:text-[#7A2E3B] transition-colors" vid="15">FAQ</a>
+            </nav>
+
+            
+            <div class="absolute left-1/2 -translate-x-1/2 font-serif-italic text-3xl burgundy-text font-bold" vid="16">
+                Francis.
+            </div>
+
+            
+            <div class="flex items-center" vid="17">
+                <a href="tel:0404962812" class="burgundy-bg text-[#FDFBF7] px-8 py-3 rounded-full text-[10px] font-bold tracking-widest-extra hover:opacity-90 transition-opacity" vid="18">CALL TO ORDER</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="relative h-screen flex items-center justify-center overflow-hidden" vid="19">
+        
+        <div class="absolute inset-0 bg-stone-800" vid="20">
+            <div class="absolute inset-0 bg-[url('../img/menu-hero.webp')] bg-cover bg-center opacity-60" vid="21"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" vid="22"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4" vid="23">
+            <span class="block text-[#FDFBF7] text-[12px] font-bold tracking-widest-extra mb-6 uppercase" vid="24">Made fresh daily</span>
+            <h1 class="text-[#FDFBF7] text-8xl md:text-9xl font-serif-italic leading-tight" vid="25">Our Menu</h1>
+            <p class="text-[#FDFBF7]/80 mt-8 max-w-xl mx-auto font-light leading-relaxed" vid="26">
+                Fresh sandwiches, toasties, rolls, fried classics and drinks — made daily with care.
+            </p>
+        </div>
+
+        
+        <div class="absolute bottom-32 left-1/2 -translate-x-1/2 text-[#FDFBF7] animate-bounce" vid="27">
+            <i class="ph ph-caret-down text-2xl" vid="28"></i>
+        </div>
+    </section>
+
+    
+    <main class="relative z-20 cream-bg section-overlap pb-24 px-8 lg:px-12" vid="29">
+        <div class="max-w-6xl mx-auto pt-24" vid="30">
+            
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-20" vid="31">
+                <a href="#toasties" class="burgundy-bg text-white px-8 py-3 rounded-full text-[10px] font-bold tracking-widest-extra" vid="32">ALL</a>
+                <a href="#toasties" class="bg-stone-100 text-stone-500 border border-stone-200 px-8 py-3 rounded-full text-[10px] font-bold tracking-widest-extra hover:border-[#7A2E3B] hover:text-[#7A2E3B] transition-all" vid="33">TOASTIES</a>
+                <a href="#rolls" class="bg-stone-100 text-stone-500 border border-stone-200 px-8 py-3 rounded-full text-[10px] font-bold tracking-widest-extra hover:border-[#7A2E3B] hover:text-[#7A2E3B] transition-all" vid="34">ROLLS</a>
+                <a href="#fresh" class="bg-stone-100 text-stone-500 border border-stone-200 px-8 py-3 rounded-full text-[10px] font-bold tracking-widest-extra hover:border-[#7A2E3B] hover:text-[#7A2E3B] transition-all" vid="35">FRESH</a><a href="#fried" class="bg-stone-100 text-stone-500 border border-stone-200 px-8 py-3 rounded-full text-[10px] font-bold tracking-widest-extra hover:border-[#7A2E3B] hover:text-[#7A2E3B] transition-all">FRIED</a>
+                <a href="#drinks" class="bg-stone-100 text-stone-500 border border-stone-200 px-8 py-3 rounded-full text-[10px] font-bold tracking-widest-extra hover:border-[#7A2E3B] hover:text-[#7A2E3B] transition-all" vid="36">DRINKS</a>
+            </div>
+
+            
+            <div class="space-y-32">
+                
+                <section id="toasties">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[10px] font-bold tracking-widest-extra burgundy-text uppercase">Morning Classics</span>
+                            <h2 class="text-6xl font-serif-italic mt-4">Toasties</h2>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/hct.webp" alt="HCT toastie" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">HCT</h3><span class="burgundy-text font-serif-italic text-xl">$9.50</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">Gypsy ham, melted cheese, tomato.</p>
+                        </article>
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/tuna-melt.webp" alt="Tuna Melt toastie" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">Tuna Melt</h3><span class="burgundy-text font-serif-italic text-xl">$16.50</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">Tuna salad, melted cheese. Ask for spicy option.</p>
+                        </article>
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/pastrami-reuben.webp" alt="Pastrami Reuben toastie" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">Pastrami Reuben</h3><span class="burgundy-text font-serif-italic text-xl">$17.50</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">House sauce, sauerkraut, beef pastrami, mustard, pickles and Swiss cheese.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="rolls">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[10px] font-bold tracking-widest-extra burgundy-text uppercase">Our Signature</span>
+                            <h2 class="text-6xl font-serif-italic mt-4">Rolls</h2>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/mest.webp" alt="The MEST roll" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">The MEST</h3><span class="burgundy-text font-serif-italic text-xl">$18.00</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">Mortadella, egg, stracciatella, garlic butter and tomato.</p>
+                        </article>
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/anthony-bourdain.webp" alt="Anthony Bourdain roll" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">Anthony Bourdain</h3><span class="burgundy-text font-serif-italic text-xl">$18.00</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">Mortadella, provolone, olive oil, mayo and mustard.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="fresh">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[10px] font-bold tracking-widest-extra burgundy-text uppercase">Made Fresh Daily</span>
+                            <h2 class="text-6xl font-serif-italic mt-4">Fresh</h2>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/mortadella.webp" alt="Mortadella sandwich" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">Mortadella</h3><span class="burgundy-text font-serif-italic text-xl">$16.50</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">Mortadella, stracciatella, pistachio and honey.</p>
+                        </article>
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/prosciutto.webp" alt="Prosciutto sandwich" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">Prosciutto</h3><span class="burgundy-text font-serif-italic text-xl">$17.50</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">Prosciutto, rocket, fior di latte, pesto, tomato and balsamic glaze.</p>
+                        </article>
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/caprese.webp" alt="Caprese sandwich" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">Caprese</h3><span class="burgundy-text font-serif-italic text-xl">$13.00</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed mb-4">Tomato, mozzarella, pesto and basil.</p>
+                            <div class="space-y-1 text-[10px] tracking-widest font-bold text-stone-400"><div>+ SALAMI $3.50</div><div>+ TRUFFLE SALAMI $5.00</div></div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="fried">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[10px] font-bold tracking-widest-extra burgundy-text uppercase">Fried Classics</span>
+                            <h2 class="text-6xl font-serif-italic mt-4">Fried</h2>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/chicken-schnitzel-tartare.webp" alt="Chicken Tartare" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">Chicken Tartare</h3><span class="burgundy-text font-serif-italic text-xl">$17.00</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">Chicken schnitzel, tartare sauce, avocado, lettuce, cheese and bacon.</p>
+                        </article>
+                        <article class="bg-white/70 p-8 rounded-[2rem] border border-stone-100 shadow-sm self-start">
+                            <div class="flex justify-between items-start gap-6 mb-3">
+                                <h3 class="text-xl font-semibold">Side of Chips</h3>
+                                <span class="burgundy-text font-serif-italic text-xl whitespace-nowrap">$4.50</span>
+                            </div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">Crispy and golden.</p>
+                        </article>
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/parmesan-cheese-chips.webp" alt="Parmesan Cheese Chips" class="w-full h-full object-cover"></div>
+                            <div class="flex justify-between items-start mb-2"><h3 class="text-xl font-semibold">Parmesan Cheese Chips</h3><span class="burgundy-text font-serif-italic text-xl">$6.50</span></div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">Chips with parmesan cheese.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="drinks">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[10px] font-bold tracking-widest-extra burgundy-text uppercase">Drinks</span>
+                            <h2 class="text-6xl font-serif-italic mt-4">Drinks</h2>
+                        </div>
+                    </div>
+                    <div class="bg-white/60 border border-stone-100 rounded-[2rem] divide-y divide-stone-100 shadow-sm overflow-hidden">
+                        <article class="p-7 md:p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                            <div>
+                                <h3 class="text-xl font-semibold">Coffee</h3>
+                                <p class="text-stone-500 text-sm font-light leading-relaxed mt-2">Latte, cappuccino, flat white, mocha, magic, espresso, chai latte. Prices may vary.</p>
+                            </div>
+                            <span class="burgundy-text font-serif-italic text-xl whitespace-nowrap">Sml $5.30 / Lrg $6</span>
+                        </article>
+                        <article class="p-7 md:p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                            <div>
+                                <h3 class="text-xl font-semibold">Tea</h3>
+                                <p class="text-stone-500 text-sm font-light leading-relaxed mt-2">Peppermint, English Breakfast and Earl Grey.</p>
+                            </div>
+                            <span class="burgundy-text font-serif-italic text-xl whitespace-nowrap">Sml $5.30 / Lrg $6</span>
+                        </article>
+                        <article class="p-7 md:p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                            <div>
+                                <h3 class="text-xl font-semibold">Hot Chocolate</h3>
+                                <p class="text-stone-500 text-sm font-light leading-relaxed mt-2">Iced options available.</p>
+                            </div>
+                            <span class="burgundy-text font-serif-italic text-xl whitespace-nowrap">Sml $5.30 / Lrg $6</span>
+                        </article>
+                        <article class="p-7 md:p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                            <div>
+                                <h3 class="text-xl font-semibold">Matcha</h3>
+                                <p class="text-stone-500 text-sm font-light leading-relaxed mt-2">Available hot or iced.</p>
+                            </div>
+                            <span class="burgundy-text font-serif-italic text-xl whitespace-nowrap">$9.00</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="more-drinks">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[10px] font-bold tracking-widest-extra burgundy-text uppercase">Cold drinks</span>
+                            <h2 class="text-6xl font-serif-italic mt-4">More Drinks</h2>
+                        </div>
+                    </div>
+                    <div class="bg-white/60 border border-stone-100 rounded-[2rem] divide-y divide-stone-100 shadow-sm overflow-hidden">
+                        <article class="p-7 md:p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                            <div>
+                                <h3 class="text-xl font-semibold">Canned Drinks</h3>
+                                <p class="text-stone-500 text-sm font-light leading-relaxed mt-2">Cold canned drinks.</p>
+                            </div>
+                            <span class="burgundy-text font-serif-italic text-xl whitespace-nowrap">$4.50</span>
+                        </article>
+                        <article class="p-7 md:p-8 flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                            <div>
+                                <h3 class="text-xl font-semibold">Bottled Drinks</h3>
+                                <p class="text-stone-500 text-sm font-light leading-relaxed mt-2">Boby Soda, Sam’s Juice, Mateo Soda, Kombucha, Sip Coco, Cascade, etc. Prices may vary.</p>
+                            </div>
+                            <span class="burgundy-text font-serif-italic text-xl whitespace-nowrap">$5.50</span>
+                        </article>
+                    </div>
+                    <div class="mt-10 text-center text-stone-400 text-[10px] tracking-widest font-bold uppercase">10% surcharge on weekends</div>
+                </section>
+
+            </div>            
+            <div class="mt-40 bg-[#7A2E3B] rounded-[4rem] p-16 md:p-24 text-center relative overflow-hidden" vid="197">
+                <div class="absolute top-0 right-0 p-12 opacity-10" vid="198">
+                    <i class="ph ph-storefront text-[15rem] text-white" vid="199"></i>
+                </div>
+                <div class="relative z-10" vid="200">
+                    <h2 class="text-5xl md:text-7xl font-serif-italic text-[#FDFBF7] mb-8" vid="201">Hungry yet?</h2>
+                    <p class="text-[#FDFBF7]/70 text-lg font-light mb-12 max-w-lg mx-auto" vid="202">Call ahead for takeaway, catering questions, or to check today’s specials.</p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center" vid="203">
+                        <a href="tel:0404962812" class="bg-[#FDFBF7] burgundy-text px-12 py-5 rounded-full text-[12px] font-bold tracking-widest-extra hover:bg-stone-100 transition-colors" vid="204">CALL TO ORDER</a>
+                        <a href="https://maps.google.com/?cid=7138294482831935208" target="_blank" rel="noopener" class="border border-[#FDFBF7] text-[#FDFBF7] px-12 py-5 rounded-full text-[12px] font-bold tracking-widest-extra hover:bg-white/10 transition-colors" vid="205">GET DIRECTIONS</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <footer class="bg-[#1C1917] text-white rounded-t-[5rem] pt-24 pb-12 px-8 -mt-20 relative z-30" vid="206">
+        <div class="max-w-7xl mx-auto" vid="207">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20" vid="208">
+                
+                <div vid="209">
+                    <div class="font-serif-italic text-4xl mb-8" vid="210">Francis.</div>
+                    <p class="text-stone-500 font-light leading-relaxed text-sm" vid="211">
+                        Made fresh daily. Made with care. Fresh sandwiches, toasties, rolls and coffee in Belmont.
+                    </p>
+                    <div class="flex gap-4 mt-8" vid="212">
+                        <a href="https://www.instagram.com/francisdeli164/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full border border-stone-800 flex items-center justify-center hover:border-[#7A2E3B] transition-colors" vid="213"><i class="ph ph-instagram-logo" vid="214"></i></a>
+                        <a href="https://www.facebook.com/francisdeli164/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full border border-stone-800 flex items-center justify-center hover:border-[#7A2E3B] transition-colors" vid="215"><i class="ph ph-facebook-logo" vid="216"></i></a>
+                    </div>
+                </div>
+
+                
+                <div vid="217">
+                    <h4 class="text-[10px] font-bold tracking-widest-extra text-stone-400 mb-8 uppercase" vid="218">Navigation</h4>
+                    <ul class="space-y-4 text-sm font-light text-stone-300" vid="219">
+                        <li vid="220"><a href="/" class="hover:text-[#7A2E3B] transition-colors" vid="221">Home</a></li>
+                        <li vid="222"><a href="/#about" class="hover:text-[#7A2E3B] transition-colors" vid="223">About Us</a></li>
+                        <li vid="224"><a href="/menu/" class="hover:text-[#7A2E3B] transition-colors" vid="225">Menu</a></li>
+                        <li vid="226"><a href="tel:0404962812" class="hover:text-[#7A2E3B] transition-colors" vid="227">Contact</a></li>
+                    </ul>
+                </div>
+
+                
+                <div vid="228">
+                    <h4 class="text-[10px] font-bold tracking-widest-extra text-stone-400 mb-8 uppercase" vid="229">Opening Hours</h4>
+                    <ul class="space-y-4 text-sm font-light text-stone-300" vid="230">
+                        <li class="flex justify-between" vid="231"><span vid="232">Mon — Fri</span> <span vid="233">8:00 — 14:30</span></li>
+                        <li class="flex justify-between" vid="234"><span vid="235">Saturday</span> <span vid="236">8:30 — 14:30</span></li>
+                        <li class="flex justify-between text-stone-500" vid="237"><span vid="238">Sunday</span> <span vid="239">8:30 — 14:30</span></li>
+                    </ul>
+                </div>
+
+                
+                <div vid="240">
+                    <h4 class="text-[10px] font-bold tracking-widest-extra text-stone-400 mb-8 uppercase" vid="241">Find Us</h4>
+                    <p class="text-sm font-light text-stone-300 mb-6" vid="242">
+                        164 Francis St, Belmont<br vid="243">
+                        VIC 3216, Australia
+                    </p>
+                    <p class="text-sm font-light text-stone-300" vid="244">
+                        francisdeli.com.au<br vid="245">
+                        0404 962 812
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-t border-stone-800 pt-12 flex flex-col md:flex-row justify-between items-center gap-6" vid="246">
+                <span class="text-[10px] font-bold tracking-widest-extra text-stone-600 uppercase" vid="247">© 2026 Francis Deli. All rights reserved.</span>
+                <div class="flex gap-8 text-[10px] font-bold tracking-widest-extra text-stone-600 uppercase" vid="248">
+                    <span vid="249">Privacy Policy</span>
+                    <span vid="250">Terms of Service</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>

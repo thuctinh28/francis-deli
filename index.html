@@ -14,10 +14,12 @@
     <link rel="canonical" href="https://francisdeli.com.au/">
 
     <!-- Favicons -->
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico?v=3" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=3">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+
 
     <!-- Open Graph -->
     <meta property="og:type" content="restaurant">
@@ -50,7 +52,7 @@
       "priceRange": "$$",
       "servesCuisine": ["Sandwiches", "Deli", "Coffee", "Cafe", "Takeaway"],
       "areaServed": ["Belmont VIC", "Geelong VIC"],
-      "menu": "https://francisdeli.com.au/#menu",
+      "menu": "https://francisdeli.com.au/menu/",
       "hasMap": "https://maps.google.com/?cid=7138294482831935208",
       "acceptsReservations": "False",
       "address": {
@@ -206,7 +208,7 @@
             <nav class="hidden md:flex items-center gap-10" aria-label="Primary" vid="16">
                 <a href="#home" class="text-sm font-condensed uppercase tracking-widest text-dark hover:text-burgundy transition-colors" vid="17">Home</a>
                 <a href="#about" class="text-sm font-condensed uppercase tracking-widest text-dark hover:text-burgundy transition-colors" vid="18">About</a>
-                <a href="#menu" class="text-sm font-condensed uppercase tracking-widest text-dark hover:text-burgundy transition-colors" vid="19">Menu</a>
+                <a href="/menu/" class="text-sm font-condensed uppercase tracking-widest text-dark hover:text-burgundy transition-colors" vid="19">Menu</a>
                 <a href="#faq" class="text-sm font-condensed uppercase tracking-widest text-dark hover:text-burgundy transition-colors" vid="20">FAQ</a>
             </nav>
 
@@ -232,7 +234,7 @@
         <nav class="flex flex-col gap-2 px-6 py-10" aria-label="Mobile">
             <a href="#home" class="mobile-link font-serif italic text-4xl py-3 border-b border-cream/10 hover:text-cream/70 transition-colors">Home</a>
             <a href="#about" class="mobile-link font-serif italic text-4xl py-3 border-b border-cream/10 hover:text-cream/70 transition-colors">About</a>
-            <a href="#menu" class="mobile-link font-serif italic text-4xl py-3 border-b border-cream/10 hover:text-cream/70 transition-colors">Menu</a>
+            <a href="/menu/" class="mobile-link font-serif italic text-4xl py-3 border-b border-cream/10 hover:text-cream/70 transition-colors">Menu</a>
             <a href="#faq" class="mobile-link font-serif italic text-4xl py-3 border-b border-cream/10 hover:text-cream/70 transition-colors">FAQ</a>
         </nav>
         <div class="mt-auto p-6">
@@ -260,7 +262,7 @@
                     <svg class="w-4 h-4 mr-2" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
                     Get Directions
                 </a>
-                <a href="#menu" class="w-full sm:w-auto px-10 py-4 bg-cream text-burgundy rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-white transition-colors text-center shadow-lg hover:shadow-xl" vid="33">
+                <a href="/menu/" class="w-full sm:w-auto px-10 py-4 bg-cream text-burgundy rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-white transition-colors text-center shadow-lg hover:shadow-xl" vid="33">
                     View Menu
                 </a>
                 <a href="tel:0404962812" class="w-full sm:w-auto px-10 py-4 bg-transparent text-cream rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-cream/10 transition-colors text-center shadow-lg hover:shadow-xl border border-cream/50" vid="35">
@@ -282,24 +284,6 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-20" vid="41">
                 
-                
-                <div class="menu-category" vid="42">
-                    <div class="flex items-end justify-between border-b border-burgundy pb-4 mb-8" vid="43">
-                        <h3 class="font-serif text-4xl text-burgundy italic" vid="44">SD Toast</h3>
-                        <span class="text-sm font-condensed uppercase tracking-widest text-gray-500 mb-1" vid="45">(2pc)</span>
-                    </div>
-                    <ul class="space-y-8" vid="46">
-                        <li class="group" vid="47">
-                            <div class="flex justify-between items-baseline mb-2" vid="48">
-                                <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="49">Choice of Spread</h4>
-                                <span class="font-condensed text-burgundy text-xl tracking-wide" vid="50">$8</span>
-                            </div>
-                            <p class="text-gray-500 text-base leading-relaxed font-light" vid="51">Vegemite, peanut butter, honey, Nutella, pistachio.</p>
-                        </li>
-                    </ul>
-                </div>
-
-                
                 <div class="menu-category" vid="52">
                     <div class="flex items-end justify-between border-b border-burgundy pb-4 mb-8" vid="53">
                         <h3 class="font-serif text-4xl text-burgundy italic" vid="54">Toasties</h3>
@@ -307,81 +291,78 @@
                     </div>
                     <ul class="space-y-8" vid="56">
                         <li class="group" vid="57">
-                            <div class="flex justify-between items-baseline mb-2" vid="58">
+                            <div class="flex justify-between items-baseline gap-4 mb-2" vid="58">
                                 <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="59">HCT</h4>
-                                <span class="font-condensed text-burgundy text-xl tracking-wide" vid="60">$9.5</span>
+                                <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="60">$9.50</span>
                             </div>
                             <p class="text-gray-500 text-base leading-relaxed font-light" vid="61">Gypsy ham, melted cheese, tomato.</p>
                         </li>
                         <li class="group" vid="62">
-                            <div class="flex justify-between items-baseline mb-2" vid="63">
+                            <div class="flex justify-between items-baseline gap-4 mb-2" vid="63">
                                 <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="64">Tuna Melt</h4>
-                                <span class="font-condensed text-burgundy text-xl tracking-wide" vid="65">$16.5</span>
+                                <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="65">$16.50</span>
                             </div>
-                            <p class="text-gray-500 text-base leading-relaxed font-light" vid="66">Tuna salad, melted cheeses.</p>
+                            <p class="text-gray-500 text-base leading-relaxed font-light" vid="66">Tuna salad, melted cheese. Ask for spicy option.</p>
                         </li>
                         <li class="group" vid="67">
-                            <div class="flex justify-between items-baseline mb-2" vid="68">
+                            <div class="flex justify-between items-baseline gap-4 mb-2" vid="68">
                                 <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="69">Pastrami Reuben</h4>
-                                <span class="font-condensed text-burgundy text-xl tracking-wide" vid="70">$17.5</span>
+                                <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="70">$17.50</span>
                             </div>
-                            <p class="text-gray-500 text-base leading-relaxed font-light" vid="71">House sauce, sauerkraut, beef pastrami, mustard, pickle, Swiss cheese.</p>
+                            <p class="text-gray-500 text-base leading-relaxed font-light" vid="71">House sauce, sauerkraut, beef pastrami, mustard, pickles, Swiss cheese.</p>
                         </li>
                     </ul>
                 </div>
 
-                
                 <div class="menu-category" vid="72">
                     <div class="flex items-end justify-between border-b border-burgundy pb-4 mb-8" vid="73">
                         <h3 class="font-serif text-4xl text-burgundy italic" vid="74">Rolls</h3>
                     </div>
                     <ul class="space-y-8" vid="75">
                         <li class="group" vid="76">
-                            <div class="flex justify-between items-baseline mb-2" vid="77">
+                            <div class="flex justify-between items-baseline gap-4 mb-2" vid="77">
                                 <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="78">The MEST</h4>
-                                <span class="font-condensed text-burgundy text-xl tracking-wide" vid="79">$18</span>
+                                <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="79">$18.00</span>
                             </div>
                             <p class="text-gray-500 text-base leading-relaxed font-light" vid="80">Mortadella, egg, stracciatella, garlic butter, tomato.</p>
                         </li>
                         <li class="group" vid="81">
-                            <div class="flex justify-between items-baseline mb-2" vid="82">
+                            <div class="flex justify-between items-baseline gap-4 mb-2" vid="82">
                                 <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="83">Anthony Bourdain</h4>
-                                <span class="font-condensed text-burgundy text-xl tracking-wide" vid="84">$18</span>
+                                <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="84">$18.00</span>
                             </div>
-                            <p class="text-gray-500 text-base leading-relaxed font-light" vid="85">Mortadella Deluxe. Mortadella, provolone, olive oil, mayo, mustard.</p>
+                            <p class="text-gray-500 text-base leading-relaxed font-light" vid="85">Mortadella, provolone, olive oil, mayo, mustard.</p>
                         </li>
                     </ul>
                 </div>
 
-                
                 <div class="menu-category" vid="86">
                     <div class="flex items-end justify-between border-b border-burgundy pb-4 mb-8" vid="87">
                         <h3 class="font-serif text-4xl text-burgundy italic" vid="88">Fried</h3>
                     </div>
                     <ul class="space-y-8" vid="89">
                         <li class="group" vid="90">
-                            <div class="flex justify-between items-baseline mb-2" vid="91">
-                                <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="92">Chicken Schnitzel Tartare</h4>
-                                <span class="font-condensed text-burgundy text-xl tracking-wide" vid="93">$16.5</span>
+                            <div class="flex justify-between items-baseline gap-4 mb-2" vid="91">
+                                <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="92">Chicken Tartare</h4>
+                                <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="93">$17.00</span>
                             </div>
                             <p class="text-gray-500 text-base leading-relaxed font-light" vid="94">Chicken schnitzel, tartare sauce, avocado, lettuce, cheese, bacon.</p>
                         </li>
                         <li class="group" vid="95">
-                            <div class="flex justify-between items-baseline mb-2" vid="96">
-                                <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="97">Side Chips</h4>
-                                <span class="font-condensed text-burgundy text-xl tracking-wide" vid="98">$4</span>
+                            <div class="flex justify-between items-baseline gap-4 mb-2" vid="96">
+                                <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="97">Side of Chips</h4>
+                                <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="98">$4.50</span>
                             </div>
                         </li>
                         <li class="group" vid="99">
-                            <div class="flex justify-between items-baseline mb-2" vid="100">
+                            <div class="flex justify-between items-baseline gap-4 mb-2" vid="100">
                                 <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="101">Parmesan Cheese Chips</h4>
-                                <span class="font-condensed text-burgundy text-xl tracking-wide" vid="102">$6</span>
+                                <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="102">$6.50</span>
                             </div>
                         </li>
                     </ul>
                 </div>
 
-                
                 <div class="menu-category lg:col-span-2" vid="103">
                     <div class="flex items-end justify-between border-b border-burgundy pb-4 mb-8" vid="104">
                         <h3 class="font-serif text-4xl text-burgundy italic" vid="105">Fresh</h3>
@@ -390,83 +371,85 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8" vid="107">
                         <ul class="space-y-8" vid="108">
                             <li class="group" vid="109">
-                                <div class="flex justify-between items-baseline mb-2" vid="110">
+                                <div class="flex justify-between items-baseline gap-4 mb-2" vid="110">
                                     <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="111">Mortadella</h4>
-                                    <span class="font-condensed text-burgundy text-xl tracking-wide" vid="112">$16.5</span>
+                                    <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="112">$16.50</span>
                                 </div>
                                 <p class="text-gray-500 text-base leading-relaxed font-light" vid="113">Mortadella, stracciatella, pistachio, honey.</p>
                             </li>
                             <li class="group" vid="114">
-                                <div class="flex justify-between items-baseline mb-2" vid="115">
+                                <div class="flex justify-between items-baseline gap-4 mb-2" vid="115">
                                     <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="116">Prosciutto</h4>
-                                    <span class="font-condensed text-burgundy text-xl tracking-wide" vid="117">$17.5</span>
+                                    <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="117">$17.50</span>
                                 </div>
                                 <p class="text-gray-500 text-base leading-relaxed font-light" vid="118">Prosciutto, rocket, fior di latte, pesto, tomato, balsamic glaze.</p>
                             </li>
                         </ul>
                         <ul class="space-y-8" vid="119">
                             <li class="group" vid="120">
-                                <div class="flex justify-between items-baseline mb-2" vid="121">
+                                <div class="flex justify-between items-baseline gap-4 mb-2" vid="121">
                                     <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="122">Caprese</h4>
-                                    <span class="font-condensed text-burgundy text-xl tracking-wide" vid="123">$13</span>
+                                    <span class="font-condensed text-burgundy text-xl tracking-wide whitespace-nowrap" vid="123">$13.00</span>
                                 </div>
                                 <p class="text-gray-500 text-base leading-relaxed font-light mb-2" vid="124">Tomato, mozzarella, pesto, basil.</p>
-                                <div class="inline-flex gap-3 text-xs font-condensed uppercase tracking-widest text-burgundy bg-sand/30 px-3 py-1.5 rounded-md" vid="125">
-                                    <span vid="126">+ Salami $3.5</span>
+                                <div class="inline-flex flex-wrap gap-3 text-xs font-condensed uppercase tracking-widest text-burgundy bg-sand/30 px-3 py-1.5 rounded-md" vid="125">
+                                    <span vid="126">+ Salami $3.50</span>
                                     <span class="text-sand/50" vid="127">|</span>
-                                    <span vid="128">+ Truffle Salami $5</span>
-                                </div>
-                            </li>
-                            <li class="group" vid="129">
-                                <div class="flex justify-between items-baseline mb-2" vid="130">
-                                    <h4 class="font-bold text-dark text-xl group-hover:text-burgundy transition-colors" vid="131">Chicken Pesto</h4>
-                                    <span class="font-condensed text-burgundy text-xl tracking-wide" vid="132">$16.5</span>
-                                </div>
-                                <p class="text-gray-500 text-base leading-relaxed font-light mb-2" vid="133">Chicken, pesto mayo, pistachio, lettuce, avocado.</p>
-                                <div class="inline-block text-xs font-condensed uppercase tracking-widest text-burgundy bg-sand/30 px-3 py-1.5 rounded-md" vid="134">
-                                    <span vid="135">+ Truffle Ricotta Cheese $2</span>
+                                    <span vid="128">+ Truffle Salami $5.00</span>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                
-                <div class="menu-category" vid="136">
+                <div class="menu-category lg:col-span-3" vid="136">
                     <div class="flex items-end justify-between border-b border-burgundy pb-4 mb-8" vid="137">
                         <h3 class="font-serif text-4xl text-burgundy italic" vid="138">Drinks</h3>
                     </div>
-                    <ul class="space-y-5" vid="139">
-                        <li class="group bg-sand/20 rounded-xl p-5 border border-sand/50" vid="140">
-                            <div class="flex justify-between items-baseline mb-1" vid="141">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8" vid="139">
+                        <div class="group" vid="140">
+                            <div class="flex justify-between items-baseline gap-4 mb-1" vid="141">
                                 <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors" vid="142">Coffee</h4>
+                                <span class="font-condensed text-burgundy text-lg tracking-wide whitespace-nowrap" vid="143">Sml $5.30 / Lrg $6</span>
                             </div>
-                            <p class="text-gray-500 text-sm leading-relaxed font-light" vid="143">Black, Extra Shot, Alt Milks available.</p>
-                        </li>
-                        <li class="group bg-sand/20 rounded-xl p-5 border border-sand/50" vid="144">
-                            <div class="flex justify-between items-baseline" vid="145">
-                                <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors" vid="146">Tea / Chai / Choc</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed font-light" vid="144">Latte, cappuccino, flat white, mocha, magic, espresso, chai latte.</p>
+                        </div>
+                        <div class="group" vid="145">
+                            <div class="flex justify-between items-baseline gap-4 mb-1" vid="146">
+                                <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors" vid="147">Tea</h4>
+                                <span class="font-condensed text-burgundy text-lg tracking-wide whitespace-nowrap" vid="148">Sml $5.30 / Lrg $6</span>
                             </div>
-                        </li>
-                        <li class="group flex justify-between items-baseline py-2 px-1 border-b border-sand/50" vid="147">
-                            <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors" vid="148">Fresh Orange Juice</h4>
-                            <span class="font-condensed text-burgundy text-lg tracking-wide" vid="149">$7</span>
-                        </li>
-                        <li class="group flex justify-between items-baseline py-2 px-1 border-b border-sand/50" vid="150">
-                            <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors" vid="151">Matcha</h4>
-                            <span class="font-condensed text-burgundy text-lg tracking-wide" vid="152">$8</span>
-                        </li>
-                        <li class="group flex justify-between items-baseline py-2 px-1" vid="153">
-                            <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors" vid="154">Milkshake</h4>
-                            <span class="font-condensed text-burgundy text-lg tracking-wide" vid="155">$8</span>
-                        </li>
-                    </ul>
+                            <p class="text-gray-500 text-sm leading-relaxed font-light" vid="149">Peppermint, English Breakfast and Earl Grey.</p>
+                        </div>
+                        <div class="group" vid="150">
+                            <div class="flex justify-between items-baseline gap-4 mb-1" vid="151">
+                                <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors" vid="152">Hot Chocolate</h4>
+                                <span class="font-condensed text-burgundy text-lg tracking-wide whitespace-nowrap" vid="153">Sml $5.30 / Lrg $6</span>
+                            </div>
+                            <p class="text-gray-500 text-sm leading-relaxed font-light" vid="154">Iced options available.</p>
+                        </div>
+                        <div class="group flex justify-between items-baseline gap-4" vid="154">
+                            <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors">Matcha</h4>
+                            <span class="font-condensed text-burgundy text-lg tracking-wide whitespace-nowrap">$9.00</span>
+                        </div>
+                        <div class="group flex justify-between items-baseline gap-4" vid="155">
+                            <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors" vid="156">Canned Drinks</h4>
+                            <span class="font-condensed text-burgundy text-lg tracking-wide whitespace-nowrap" vid="157">$4.50</span>
+                        </div>
+                        <div class="group" vid="158">
+                            <div class="flex justify-between items-baseline gap-4 mb-1" vid="159">
+                                <h4 class="font-bold text-dark text-lg group-hover:text-burgundy transition-colors" vid="160">Bottled Drinks</h4>
+                                <span class="font-condensed text-burgundy text-lg tracking-wide whitespace-nowrap" vid="161">$5.50</span>
+                            </div>
+                            <p class="text-gray-500 text-sm leading-relaxed font-light" vid="162">Boby Soda, Sam’s Juice, Mateo Soda, Kombucha, Sip Coco, Cascade, etc.</p>
+                        </div>
+                    </div>
+                    <p class="mt-2 text-xs font-condensed uppercase tracking-widest text-gray-500">10% surcharge on weekends</p>
                 </div>
-            </div>
-            
+            </div>            
             <div class="mt-24 text-center" vid="156">
-                <a href="tel:0404962812" class="inline-flex items-center justify-center px-12 py-4 border-2 border-burgundy text-burgundy rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-burgundy hover:text-white transition-all group shadow-sm" vid="157">
-                    View Catering Menu
+                <a href="/menu/" class="inline-flex items-center justify-center px-12 py-4 border-2 border-burgundy text-burgundy rounded-full font-condensed uppercase tracking-widest text-sm hover:bg-burgundy hover:text-white transition-all group shadow-sm" vid="157">
+                    View Full Menu
                     <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </a>
             </div>
