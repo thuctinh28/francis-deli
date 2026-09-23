@@ -38,37 +38,60 @@
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #FDFBF7; }
         ::-webkit-scrollbar-thumb { background: #7A2E3B; border-radius: 10px; }
+
+        @media (prefers-reduced-motion: reduce) {
+            #mobile-menu { transition: none !important; }
+        }
     </style>
 </head>
 <body class="antialiased" vid="6">
 
     
-    <header class="fixed top-0 left-0 right-0 h-24 z-50 bg-[#FDFBF7]/80 backdrop-blur-md border-b border-stone-200" vid="7">
-        <div class="max-w-7xl mx-auto h-full px-8 flex items-center justify-between" vid="8">
-            
-            <div class="lg:hidden" vid="9">
-                <i class="ph ph-list text-2xl" vid="10"></i>
-            </div>
+    <header class="fixed top-0 w-full z-50 bg-[#FDFBF7]/90 backdrop-blur-md border-b border-stone-200 h-24" id="header" vid="7">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between" vid="8">
+            <a href="/" class="font-serif-italic text-3xl font-bold tracking-tight burgundy-text flex items-baseline" vid="9">
+                Francis Deli
+                <span class="text-xs font-semibold uppercase tracking-widest-extra text-stone-500 ml-3 hidden sm:inline-block" vid="10">Now Open</span>
+            </a>
 
-            
-            <nav class="hidden lg:flex items-center gap-12 text-[10px] font-semibold tracking-widest-extra text-stone-500" vid="11">
-                <a href="/" class="hover:text-[#7A2E3B] transition-colors" vid="12">HOME</a>
-                <a href="/#about" class="hover:text-[#7A2E3B] transition-colors" vid="13">ABOUT</a>
-                <a href="/menu/" class="text-[#7A2E3B] border-b border-[#7A2E3B] pb-1" vid="14">MENU</a>
+            <nav class="hidden md:flex items-center gap-10 text-sm font-semibold uppercase tracking-widest-extra text-stone-600" aria-label="Primary" vid="11">
+                <a href="/" class="hover:text-[#7A2E3B] transition-colors" vid="12">Home</a>
+                <a href="/#about" class="hover:text-[#7A2E3B] transition-colors" vid="13">About</a>
+                <a href="/menu/" class="text-[#7A2E3B] border-b border-[#7A2E3B] pb-1" aria-current="page" vid="14">Menu</a>
                 <a href="/#faq" class="hover:text-[#7A2E3B] transition-colors" vid="15">FAQ</a>
             </nav>
 
-            
-            <div class="absolute left-1/2 -translate-x-1/2 font-serif-italic text-3xl burgundy-text font-bold" vid="16">
-                Francis.
-            </div>
-
-            
-            <div class="flex items-center" vid="17">
-                <a href="tel:0404962812" class="burgundy-bg text-[#FDFBF7] px-8 py-3 rounded-full text-[10px] font-bold tracking-widest-extra hover:opacity-90 transition-opacity" vid="18">CALL TO ORDER</a>
+            <div class="flex items-center gap-4" vid="16">
+                <a href="tel:0404962812" class="hidden md:inline-flex items-center justify-center px-8 py-3 burgundy-bg text-white rounded-full text-sm font-semibold uppercase tracking-widest-extra hover:bg-stone-900 transition-colors shadow-sm" vid="17">
+                    Call to Order
+                </a>
+                <button id="menu-toggle" class="md:hidden burgundy-text p-2 -mr-2" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" vid="18">
+                    <svg class="w-7 h-7" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+                </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] burgundy-bg text-[#FDFBF7] flex flex-col md:hidden" role="dialog" aria-modal="true" aria-label="Menu" style="transform:translateX(100%); transition:transform 320ms cubic-bezier(.22,1,.36,1);">
+        <div class="flex items-center justify-between h-24 px-6 border-b border-white/15">
+            <span class="font-serif-italic text-3xl font-bold tracking-tight">Francis Deli</span>
+            <button id="menu-close" class="text-[#FDFBF7] p-2 -mr-2" aria-label="Close menu">
+                <svg class="w-7 h-7" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-2 px-6 py-10" aria-label="Mobile">
+            <a href="/" class="mobile-link font-serif-italic text-4xl py-3 border-b border-white/10 hover:text-white/70 transition-colors">Home</a>
+            <a href="/#about" class="mobile-link font-serif-italic text-4xl py-3 border-b border-white/10 hover:text-white/70 transition-colors">About</a>
+            <a href="/menu/" aria-current="page" class="mobile-link font-serif-italic text-4xl py-3 border-b border-white/10 text-white/80 transition-colors">Menu</a>
+            <a href="/#faq" class="mobile-link font-serif-italic text-4xl py-3 border-b border-white/10 hover:text-white/70 transition-colors">FAQ</a>
+        </nav>
+        <div class="mt-auto p-6">
+            <a href="tel:0404962812" class="mobile-link block w-full text-center px-8 py-4 bg-[#FDFBF7] burgundy-text rounded-full text-sm font-semibold uppercase tracking-widest-extra hover:bg-white transition-colors shadow-lg">
+                Call to Order
+            </a>
+        </div>
+    </div>
 
     
     <section class="relative h-screen flex items-center justify-center overflow-hidden" vid="19">
@@ -354,5 +377,33 @@
         </div>
     </footer>
 
+    <script>
+        const menu = document.getElementById('mobile-menu');
+        const openBtn = document.getElementById('menu-toggle');
+        const closeBtn = document.getElementById('menu-close');
+
+        const openMenu = () => {
+            menu.style.transform = 'translateX(0)';
+            openBtn.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+            closeBtn.focus();
+        };
+
+        const closeMenu = (returnFocus = true) => {
+            menu.style.transform = 'translateX(100%)';
+            openBtn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+            if (returnFocus) openBtn.focus();
+        };
+
+        openBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', () => closeMenu());
+        menu.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => closeMenu(false));
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && openBtn.getAttribute('aria-expanded') === 'true') closeMenu();
+        });
+    </script>
 
 </body></html>
