@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    { "source": "/staff", "destination": "/staff/", "permanent": true },
+    { "source": "/manager", "destination": "/manager/", "permanent": true },
+    { "source": "/admin", "destination": "/manager/", "permanent": false },
+    { "source": "/deputy", "destination": "/staff/", "permanent": false },
+    { "source": "/deputy/", "destination": "/staff/", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/staff/:path*", "destination": "https://francis-deli-timeclock.vercel.app/staff/:path*" },
+    { "source": "/manager/:path*", "destination": "https://francis-deli-timeclock.vercel.app/manager/:path*" },
+    { "source": "/deputy/:path*", "destination": "https://francis-deli-timeclock.vercel.app/deputy/:path*" }
+  ],
   "headers": [
     {
       "source": "/img/(.*)",

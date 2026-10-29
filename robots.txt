@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /deputy/
+Disallow: /staff/
+Disallow: /manager/
 
 Sitemap: https://francisdeli.com.au/sitemap.xml
