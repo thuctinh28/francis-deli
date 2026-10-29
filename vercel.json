@@ -7,6 +7,8 @@
     { "source": "/deputy/", "destination": "/staff/", "permanent": false }
   ],
   "rewrites": [
+    { "source": "/staff/", "destination": "https://francis-deli-timeclock.vercel.app/staff/index.html" },
+    { "source": "/manager/", "destination": "https://francis-deli-timeclock.vercel.app/manager/index.html" },
     { "source": "/staff/:path*", "destination": "https://francis-deli-timeclock.vercel.app/staff/:path*" },
     { "source": "/manager/:path*", "destination": "https://francis-deli-timeclock.vercel.app/manager/:path*" },
     { "source": "/deputy/:path*", "destination": "https://francis-deli-timeclock.vercel.app/deputy/:path*" }
