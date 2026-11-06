@@ -141,6 +141,8 @@
         ::-webkit-scrollbar-track { background: #FDFBF7; }
         ::-webkit-scrollbar-thumb { background: #7A2E3B; border-radius: 10px; }
 
+        #mobile-menu.is-open img[alt="Francis Deli"] { filter: brightness(0) invert(1); }
+
         @media (prefers-reduced-motion: reduce) {
             #mobile-menu { transition: none !important; }
         }
@@ -474,6 +476,7 @@
         const closeBtn = document.getElementById('menu-close');
 
         const openMenu = () => {
+            menu.classList.add('is-open');
             menu.style.transform = 'translateX(0)';
             openBtn.setAttribute('aria-expanded', 'true');
             document.body.style.overflow = 'hidden';
@@ -481,6 +484,7 @@
         };
 
         const closeMenu = (returnFocus = true) => {
+            menu.classList.remove('is-open');
             menu.style.transform = 'translateX(100%)';
             openBtn.setAttribute('aria-expanded', 'false');
             document.body.style.overflow = '';
