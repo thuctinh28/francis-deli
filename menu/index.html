@@ -151,9 +151,9 @@
     
     <header class="fixed top-0 w-full z-50 bg-[#FDFBF7]/90 backdrop-blur-md border-b border-stone-200 h-24" id="header" vid="7">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between" vid="8">
-            <a href="/" class="font-serif text-3xl font-bold tracking-tight burgundy-text flex items-baseline" vid="9">
-                Francis Deli
-                <span class="text-xs font-condensed uppercase tracking-widest text-stone-500 ml-3 hidden sm:inline-block" vid="10">Now Open</span>
+            <a href="/" class="flex items-center gap-3" aria-label="Francis Deli home">
+                <img src="../img/logo-wordmark.png" alt="Francis Deli" width="1657" height="728" style="height:64px;width:auto;border-radius:10px">
+                <span class="text-xs font-condensed uppercase tracking-widest text-stone-500 hidden sm:inline-block">Now Open</span>
             </a>
 
             <nav class="hidden md:flex items-center gap-10 text-sm font-condensed uppercase tracking-widest text-stone-600" aria-label="Primary" vid="11">
@@ -177,7 +177,9 @@
     <!-- Mobile menu -->
     <div id="mobile-menu" class="fixed inset-0 z-[60] burgundy-bg text-[#FDFBF7] flex flex-col md:hidden" role="dialog" aria-modal="true" aria-label="Menu" style="transform:translateX(100%); transition:transform 320ms cubic-bezier(.22,1,.36,1);">
         <div class="flex items-center justify-between h-24 px-6 border-b border-white/15">
-            <span class="font-serif text-3xl font-bold tracking-tight">Francis Deli</span>
+            <a href="/" class="mobile-link flex items-center" aria-label="Francis Deli home">
+                <img src="../img/logo-wordmark.png" alt="Francis Deli" width="1657" height="728" style="height:52px;width:auto;border-radius:8px">
+            </a>
             <button id="menu-close" class="text-[#FDFBF7] p-2 -mr-2" aria-label="Close menu">
                 <svg class="w-7 h-7" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </button>
@@ -246,17 +248,20 @@
                             <p class="text-stone-500 text-sm font-light leading-relaxed">Mortadella, Stracciatella, Honey and Pistachio.</p>
                             <div class="mt-4 space-y-1 text-xs font-condensed tracking-widest text-stone-400"><div>+ Pesto $1.5</div></div>
                         </article>
-                        <article class="bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100">
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/number-2.webp" alt="Number 2 sandwich with prosciutto, truffle ricotta, rocket, roasted peppers, fior di latte and balsamic glaze" class="w-full h-full object-cover"></div>
                             <div class="flex justify-between items-start mb-2 gap-3"><h3 class="text-xl font-semibold">Number #2</h3><span class="font-condensed burgundy-text text-xl tracking-wide whitespace-nowrap">$17.50</span></div>
                             <p class="text-stone-500 text-sm font-light leading-relaxed">Prosciutto, Truffle Ricotta, Rocket, Roasted Peppers, Fior di Latte and Balsamic Glaze.</p>
                             <div class="mt-4 space-y-1 text-xs font-condensed tracking-widest text-stone-400"><div>+ Salami $3.59</div><div>+ Truffle Salami $5</div></div>
                         </article>
-                        <article class="bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100">
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/number-3.webp" alt="Number 3 vegetarian sandwich with pesto, tomato, stracciatella, basil, pistachio, honey and roasted peppers" class="w-full h-full object-cover"></div>
                             <div class="flex justify-between items-start mb-2 gap-3"><h3 class="text-xl font-semibold">Number #3 <span class="ml-1 align-middle text-[10px] font-condensed tracking-widest burgundy-text border border-[#7A2E3B] rounded-full px-2 py-1">VG</span></h3><span class="font-condensed burgundy-text text-xl tracking-wide whitespace-nowrap">$16.00</span></div>
                             <p class="text-stone-500 text-sm font-light leading-relaxed">Pesto, Tomato, Stracciatella, Basil, Pistachio, Honey and Roasted Peppers.</p>
                             <div class="mt-4 space-y-1 text-xs font-condensed tracking-widest text-stone-400"><div>+ Salami, Mortadella, Prosciutto $3.5</div></div>
                         </article>
-                        <article class="bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100">
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/number-4.webp" alt="Number 4 chicken schnitzel sandwich with prosciutto, pesto, shaved parmesan, tomato, rocket and roasted peppers" class="w-full h-full object-cover"></div>
                             <div class="flex justify-between items-start mb-2 gap-3"><h3 class="text-xl font-semibold">Number #4</h3><span class="font-condensed burgundy-text text-xl tracking-wide whitespace-nowrap">$17.50</span></div>
                             <p class="text-stone-500 text-sm font-light leading-relaxed">Chicken Schnitzel, Prosciutto, Pesto, Shaved Parmesan, Tomato, Rocket and Roasted Peppers.</p>
                             <div class="mt-4 space-y-1 text-xs font-condensed tracking-widest text-stone-400"><div>+ Stracciatella $1.5</div></div>
@@ -265,7 +270,8 @@
                             <div class="flex justify-between items-start mb-2 gap-3"><h3 class="text-xl font-semibold">Number #5</h3><span class="font-condensed burgundy-text text-xl tracking-wide whitespace-nowrap">$18.00</span></div>
                             <p class="text-stone-500 text-sm font-light leading-relaxed">Grilled Mortadella, Fried Egg, Provolone, Fried Shallot, Garlic Butter and Honey Mustard.</p>
                         </article>
-                        <article class="bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100">
+                        <article class="group bg-white p-8 rounded-[3rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                            <div class="h-48 bg-stone-100 rounded-[2rem] mb-6 overflow-hidden"><img src="../img/menu/number-6.webp" alt="Number 6 grilled corned beef sandwich with American cheese, pickles, bang bang sauce and sauerkraut on sourdough" class="w-full h-full object-cover"></div>
                             <div class="flex justify-between items-start mb-2 gap-3"><h3 class="text-xl font-semibold">Number #6</h3><span class="font-condensed burgundy-text text-xl tracking-wide whitespace-nowrap">$17.50</span></div>
                             <p class="text-stone-500 text-sm font-light leading-relaxed">Grilled Corned Beef, American Cheese, Honey Mustard Mayo, Pickles, Bang Bang Sauce and Sauerkraut on Sourdough.</p>
                         </article>
