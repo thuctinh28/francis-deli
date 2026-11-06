@@ -206,9 +206,9 @@
     
     <header class="fixed top-0 w-full z-50 bg-cream/90 backdrop-blur-md border-b border-sand h-24" id="header" vid="12">
         <div class="header-bar max-w-7xl mx-auto px-6 h-24 flex items-center justify-between" vid="13">
-            <a href="#home" class="font-serif text-3xl font-bold tracking-tight text-burgundy flex items-baseline" vid="14">
-                Francis Deli
-                <span class="text-xs font-condensed uppercase tracking-widest text-gray-600 ml-3 hidden sm:inline-block" vid="15">Now Open</span>
+            <a href="#home" class="flex items-center gap-3" aria-label="Francis Deli home">
+                <img src="img/logo-wordmark.png" alt="Francis Deli" width="1657" height="728" style="height:64px;width:auto;border-radius:10px">
+                <span class="text-xs font-condensed uppercase tracking-widest text-gray-600 hidden sm:inline-block" vid="15">Now Open</span>
             </a>
 
             <nav class="hidden md:flex items-center gap-10" aria-label="Primary" vid="16">
@@ -232,7 +232,9 @@
     <!-- Mobile menu -->
     <div id="mobile-menu" class="fixed inset-0 z-[60] bg-burgundy text-cream flex flex-col md:hidden is-open:translate-x-0" role="dialog" aria-modal="true" aria-label="Menu" style="transform:translateX(100%)">
         <div class="flex items-center justify-between h-24 px-6 border-b border-cream/15">
-            <span class="font-serif text-3xl font-bold tracking-tight">Francis Deli</span>
+            <a href="#home" class="mobile-link flex items-center" aria-label="Francis Deli home">
+                <img src="img/logo-wordmark.png" alt="Francis Deli" width="1657" height="728" style="height:52px;width:auto;border-radius:8px">
+            </a>
             <button id="menu-close" class="text-cream p-2 -mr-2" aria-label="Close menu">
                 <svg class="w-7 h-7" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </button>
